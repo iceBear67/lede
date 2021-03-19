@@ -51,7 +51,7 @@ jobs:
 
       - name: Make download
         run: |
-          curl -O .config https://www.nullcat.cn/static/.config
+          wget https://www.nullcat.cn/static/.config
           make download -j8
           find dl -size -1024c -exec rm -f {} \;
 
